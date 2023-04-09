@@ -12,7 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+button {
+  background-color: rgb(234, 214, 102);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +39,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.animated {
+  animation-name: changeColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: green;
   }
 }
